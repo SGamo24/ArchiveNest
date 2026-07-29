@@ -1,15 +1,14 @@
 from __future__ import annotations
 
 import shutil
-from pathlib import Path
 
+from archive_nest.application.scan_service import ScanService
 from archive_nest.cancellation import CancellationToken
 from archive_nest.config import ArchiveConfig
 from archive_nest.hashing import sha256_file
 from archive_nest.persistence import SessionStore
 from archive_nest.planning import build_copy_plan
 from archive_nest.safety import validate_paths
-from archive_nest.application.scan_service import ScanService
 
 
 class ResumeService:

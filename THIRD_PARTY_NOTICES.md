@@ -20,4 +20,3 @@ Runtime and build dependencies are not relicensed by ArchiveNest:
 | ExifTool | Optional external metadata tool, not bundled | Perl Artistic License or GPL |
 
 `scripts/build.ps1` copies this notice, `LICENSE`, and `license` into the one-folder distribution. Before a public release, regenerate and review a complete dependency inventory for the exact locked dependency versions.
-

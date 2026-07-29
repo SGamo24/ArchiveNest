@@ -1,7 +1,6 @@
 from __future__ import annotations
 
 from datetime import datetime, timezone
-from pathlib import Path
 from typing import Callable
 
 from archive_nest.cancellation import CancellationToken, CancelledError
@@ -84,4 +83,3 @@ class OrganizeService:
                 self.session_store.save_scan(scan, session_status)
                 self.session_store.finish(scan.session_id, session_status)
         return scan
-

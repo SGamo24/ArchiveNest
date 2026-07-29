@@ -12,4 +12,3 @@
 - Run relevant tests before treating a change as complete; report anything that could not be run.
 - Use only synthetic files and temporary directories in tests. Never search for or use a contributor's personal photos.
 - Do not emit periodic progress messages; report only a blocker, a material safety conflict, a repository-assumption conflict, or completion.
-

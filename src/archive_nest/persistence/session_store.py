@@ -6,12 +6,8 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 from archive_nest.config import user_data_dir
-from archive_nest.domain.models import (
-    DateDecision,
-    FileRecord,
-    ScanResult,
-    ScanSummary,
-)
+from archive_nest.domain.models import (DateDecision, FileRecord, ScanResult,
+                                        ScanSummary)
 
 SCHEMA = """
 CREATE TABLE IF NOT EXISTS sessions (

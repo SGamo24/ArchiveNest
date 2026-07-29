@@ -6,4 +6,3 @@ if (-not (Test-Path -LiteralPath $Python)) {
 }
 & $Python -m archive_nest gui
 exit $LASTEXITCODE
-

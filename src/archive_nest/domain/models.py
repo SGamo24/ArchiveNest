@@ -156,4 +156,3 @@ class DiscVolume:
     @property
     def remaining_bytes(self) -> int:
         return max(0, self.capacity_bytes - self.used_bytes)
-

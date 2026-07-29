@@ -21,4 +21,3 @@ class CancellationToken:
     def raise_if_cancelled(self) -> None:
         if self.cancelled:
             raise CancelledError("Operation cancelled")
-

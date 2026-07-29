@@ -137,4 +137,3 @@ class VerifyService:
         )
         write_verification_reports(result)
         return result
-

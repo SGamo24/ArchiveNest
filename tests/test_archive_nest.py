@@ -6,7 +6,7 @@ import json
 import os
 import subprocess
 import sys
-from datetime import datetime, timedelta
+from datetime import datetime
 from pathlib import Path
 from types import SimpleNamespace
 
@@ -20,7 +20,8 @@ from archive_nest.application.verify_service import VerifyService
 from archive_nest.cancellation import CancellationToken, CancelledError
 from archive_nest.cli import EXIT_USAGE, build_parser, main
 from archive_nest.config import ArchiveConfig, ConfigStore
-from archive_nest.copying.safe_copy import CopyVerificationError, copy_and_verify
+from archive_nest.copying.safe_copy import (CopyVerificationError,
+                                            copy_and_verify)
 from archive_nest.disc import create_staging, plan_discs
 from archive_nest.disc.planner import load_archive_items
 from archive_nest.domain.models import DateDecision, DiscItem, FileRecord
@@ -30,7 +31,6 @@ from archive_nest.metadata.dates import decide_capture_date
 from archive_nest.metadata.exiftool import ExifTool
 from archive_nest.persistence import SessionStore
 from archive_nest.planning import build_copy_plan
-from archive_nest.reports import write_archive_reports
 from archive_nest.safety import PathSafetyError, normalize_path, validate_paths
 
 

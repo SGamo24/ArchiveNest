@@ -20,28 +20,12 @@ from archive_nest.persistence import SessionStore
 try:
     from PySide6.QtCore import QObject, QThread, QTimer, QUrl, Signal, Slot
     from PySide6.QtGui import QDesktopServices
-    from PySide6.QtWidgets import (
-        QApplication,
-        QCheckBox,
-        QComboBox,
-        QDialog,
-        QDialogButtonBox,
-        QFileDialog,
-        QFormLayout,
-        QGridLayout,
-        QGroupBox,
-        QHBoxLayout,
-        QLabel,
-        QLineEdit,
-        QMainWindow,
-        QMessageBox,
-        QProgressBar,
-        QPushButton,
-        QSpinBox,
-        QTextEdit,
-        QVBoxLayout,
-        QWidget,
-    )
+    from PySide6.QtWidgets import (QApplication, QCheckBox, QComboBox, QDialog,
+                                   QDialogButtonBox, QFileDialog, QFormLayout,
+                                   QGridLayout, QGroupBox, QHBoxLayout, QLabel,
+                                   QLineEdit, QMainWindow, QMessageBox,
+                                   QProgressBar, QPushButton, QSpinBox,
+                                   QTextEdit, QVBoxLayout, QWidget)
 except ImportError as exc:  # pragma: no cover - exercised when optional dependency is absent
     raise RuntimeError(
         "PySide6 is required for the GUI. Run scripts/setup.ps1 first."

@@ -34,4 +34,3 @@ def sha256_file(
 ) -> str:
     with path.open("rb") as stream:
         return sha256_stream(stream, chunk_size=chunk_size, cancellation=cancellation)
-

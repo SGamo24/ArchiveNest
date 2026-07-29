@@ -71,4 +71,3 @@ def create_staging(
             "\n".join(checksum_lines) + "\n", encoding="utf-8"
         )
     return root
-

@@ -76,4 +76,3 @@ def validate_paths(
             f"available {free_bytes} bytes"
         )
     return source_normalized, destination_normalized, free_bytes
-

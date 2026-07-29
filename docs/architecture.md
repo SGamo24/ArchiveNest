@@ -21,4 +21,3 @@ The immutable source boundary is enforced by read-only scan and hash operations.
 ## Determinism
 
 Source-relative paths are sorted case-insensitively. SHA-256 selects exact duplicates, with the lexically first path as canonical. Name collisions use the first eight SHA-256 characters. Disc grouping and ordering use stable relative paths and group identifiers.
-

@@ -14,4 +14,3 @@ foreach ($Target in $Targets) {
         Write-Host "Removed $Full"
     }
 }
-

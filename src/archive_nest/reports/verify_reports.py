@@ -67,4 +67,3 @@ table{{border-collapse:collapse;width:100%}}th,td{{border:1px solid #999;padding
         encoding="utf-8",
     )
     return output
-

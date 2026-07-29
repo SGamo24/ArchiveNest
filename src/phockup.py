@@ -99,7 +99,7 @@ class Phockup:
             self.print_action_report(run_time)
 
     def print_action_report(self, run_time):
-        logger.info(f"Processed {self.files_processed} files in {run_time:.2f} seconds. Average Throughput: {self.files_processed/run_time:.2f} files/second")
+        logger.info(f"Processed {self.files_processed} files in {run_time:.2f} seconds. Average Throughput: {self.files_processed / run_time:.2f} files/second")
         if self.unknown_found:
             logger.info(f"Found {self.unknown_found} files without EXIF date data.")
         if self.duplicates_found:
