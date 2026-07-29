@@ -29,7 +29,7 @@ jobs:
         run: |
           sudo apt-get install -y libimage-exiftool-perl
           python -m pip install --upgrade pip
-          pip install -r requirements-dev.txt
+          pip install -e ".[dev,gui]"
 
       - name: Run tests
         run: pytest
