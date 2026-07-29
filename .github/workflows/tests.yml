@@ -27,7 +27,7 @@ jobs:
 
       - name: Install dependencies
         run: |
-          sudo apt-get install -y libimage-exiftool-perl
+          sudo apt-get install -y libegl1 libimage-exiftool-perl
           python -m pip install --upgrade pip
           pip install -e ".[dev,gui]"
 
