@@ -13,6 +13,9 @@ phockup*.snap
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
+/.pytest-tmp/
+/.tools/
+/.acceptance-artifacts/
 *$py.class
 .pytest_cache
 
